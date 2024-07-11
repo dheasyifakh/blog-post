@@ -38,15 +38,23 @@ const Comments = ({postId}) => {
                     placeholder="Write a comment..." required></textarea>
             </div>
             <button type="submit"
-                className="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-primary-700 rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
+                className="inline-flex items-center py-2.5 px-4 text-xs font-medium text-center text-white bg-primary rounded-lg focus:ring-4 focus:ring-primary-200 dark:focus:ring-primary-900 hover:bg-primary-800">
                 Post comment
             </button>
         </form>
+       
         {comments.slice(0, visibleComments).map((comment, index) => (
-          <div key={index} className="mb-4 p-4 border rounded-lg shadow-sm">
-            <h3 className="font-bold">{comment.user.username}</h3>
-            <p>{comment.body}</p>
-          </div>
+            <article className="p-6 text-base bg-white rounded-lg dark:bg-gray-900"  key={index}>
+                <footer className="flex justify-between items-center mb-2">
+                    <div className="flex items-center">
+                        <p className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white font-semibold"><img
+                            className="mr-2 w-6 h-6 rounded-full"
+                            src="https://flowbite.com/docs/images/people/profile-picture-2.jpg"
+                            alt={comment.user.username}/>{comment.user.username}</p>
+                     </div>
+                </footer>
+                <p className="text-gray-500 dark:text-gray-400">{comment.body}</p>
+            </article>
         ))}
         {visibleComments < comments.length && (
           <button

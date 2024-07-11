@@ -21,7 +21,7 @@ const Header = () => {
   ]
   return (
     <div className='flex items-center justify-between p-4 '>
-        <div className="flex items-center gap-80">
+        <div className="flex items-center gap-96">
             <Image src={'/logoipsum-284.svg'} alt="logo"
                 width={100} height={60}
             />
