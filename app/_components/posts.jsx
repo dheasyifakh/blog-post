@@ -96,7 +96,7 @@ const Posts= () => {
             <button
               onClick={() => paginate(number)}
               className={`block size-8 rounded border border-gray-100 bg-white text-center leading-8 text-gray-900 ${
-                number === currentPage ? 'border-blue-600 bg-blue-600 text-white' : ''
+                number === currentPage ? 'border-blue-600 bg-primary text-white' : ''
               }`}
             >
               {number}
