@@ -1,24 +1,35 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+## Installing the Vite React App Locally
+ 1. Clone the Repository:
+ `git clone https://github.com/dheasyifakh/blog-post`
+ 
+ 2. Navigate to the Project Directory:
+ `cd blog-post`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+ 3. Install Dependencies:
+ `npm install`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ ## Running the Vite React App Locally
+ 4. Start the Development Server:
+ `npm run dev`
+
+ 5. Access the Application:
+ Open your web browser and navigate to http://localhost:3000
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+
+
+## Additional Scripts
+
+ 6. Build for Production:
+ `npm run build`
+
+ 7. Serve the Production Build:
+ `npm run serve`
 
 ## Learn More
 
