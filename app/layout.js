@@ -8,8 +8,8 @@ const jakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 
 export const metadata = {
-  title: "Tit;koma",
-  description: "Find your Theraphist",
+  title: "Blog Post",
+  description: "Blog post",
 };
 
 export default function RootLayout({ children }) {
